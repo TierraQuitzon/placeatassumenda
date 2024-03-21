@@ -1,0 +1,82 @@
+{
+  "name": "placeatassumenda",
+  "version": "1.0.0",
+  "description": "Typescript loaders for swc",
+  "keywords": [
+    "typescript",
+    "swc",
+    "facilis",
+    "require"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TierraQuitzon/placeatassumenda.git"
+  },
+  "license": "MIT",
+  "author": "ErwinMayer",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.esm.mjs",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/dist/esm/index.esm.mjs",
+  "types": "dist/types/index.d.ts",
+  "bin": {
+    "ts-swc": "bin/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@swc/core": "1.4.1",
+    "core-js": "^3.36.0",
+    "cross-spawn-cb": "^0.6.18",
+    "env-path-key": "^0.3.0",
+    "exit": "^0.1.2",
+    "get-tsconfig-compat": "^0.1.0",
+    "minimatch": "^3.1.2",
+    "mkdirp": "^0.5.6",
+    "node-version-call": "^0.5.2",
+    "os-shim": "^0.1.3",
+    "path-posix": "^1.0.0",
+    "path-string-prepend": "^0.2.2",
+    "pirates": "^2.1.2",
+    "regenerator-runtime": "^0.14.1",
+    "short-hash": "^1.0.0",
+    "slash": "^1.0.0",
+    "ts-node": "10.8.2",
+    "typescript": "^5.3.3",
+    "which": "^1.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.3",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.19",
+    "cr": "^0.1.0",
+    "cross-spawn-cb": "^0.6.18",
+    "depcheck": "^1.4.7",
+    "getopts-compat": "^2.2.5",
+    "mocha": "^10.3.0",
+    "mocha-compat": "^3.5.5",
+    "react": "^18.2.0",
+    "ts-dev-stack": "^0.15.2"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "tsds": {
+    "source": "src/index.mjs",
+    "targets": [
+      "cjs",
+      "esm"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/TierraQuitzon/placeatassumenda.git/issues"
+  }
+}
